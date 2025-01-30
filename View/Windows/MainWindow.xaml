@@ -12,22 +12,30 @@
             <RowDefinition Height="10" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <Menu>
+        <Menu RenderTransformOrigin="0.5,0.5">
+            <Menu.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-29.333"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-14.048"/>
+                </TransformGroup>
+            </Menu.RenderTransform>
             <MenuItem>
-                <MenuItem/>Header="Файл">
+                <MenuItem/> Header="Файл">
                 <MenuItem/> >Header="Вход в систему"/>
                 <MenuItem/> >Header="Выход из системы "/>
                 <MenuItem/> >Header="Закрыть приложение"/>
                 <MenuItem/> >Header="Управление читатеями"/>
                 <MenuItem/> >Header="Управление абониментом"/>
 
-                </MenuItem>
-                    <Menu>
-                    
-                </Menu>
+            </MenuItem>
 
-         
-        
+
+        </Menu>
+
+
+
         <Frame Name="MainFrame" Grid.Row="2"/>
 
     </Grid>
